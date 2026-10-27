@@ -1,4 +1,5 @@
-# ODIN
+# PAPERWISE
+
 
 I built Paperwise as a small research paper assistant. You can upload papers and then ask questions about the content of those papers, check claims against the latest web results and use a separate /btw chat for questions that aren't specifically about the papers you've uploaded.
 
