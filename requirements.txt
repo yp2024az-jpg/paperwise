@@ -1,0 +1,16 @@
+beautifulsoup4
+langchain-classic
+langchain-community
+langchain-core
+langchain-nvidia-ai-endpoints
+langchain-qdrant
+langchain-text-splitters
+langgraph
+langgraph-checkpoint-sqlite
+PyMuPDF
+pydantic
+python-dotenv
+qdrant-client
+streamlit
+tavily-python
+deepeval

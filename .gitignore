@@ -1,0 +1,9 @@
+*.json
+.deepeval
+.vscode
+*.pdf
+*.db*
+
+__pycache__
+.env
+embedding_cache
