@@ -6,15 +6,14 @@ The application features a Streamlit frontend coupled with an agentic backend or
 
 I haven't been able to get this project uploaded to GitHub yet.
 
-## What it can do
+## Key Agentic Features & Architecture
 
-- Upload PDF, TXT and Markdown files.
-- Load papers by ArXiv ID or title, and index web pages.
-- Pose questions using the documents uploaded to the current chat session.
-- Check that a research claim hasn't been superseded by more recent work.
-- Use `/btw <question>` for a standalone general knowledge or web search response.
-- Check the answers against the OpenClaw report and the saved questions.
-
+- **Multi-Agent & Tool-Calling Workflows:** Built using **LangGraph**, orchestrating autonomous agent loops that decide whether to query the local vector store, search the live web, or fall back to general knowledge.
+- **Dynamic Document Ingestion:** Upload PDF, TXT, and Markdown files, or load papers dynamically via ArXiv ID/title and index web pages.
+- **Claim Verification Loop:** Cross-references extracted research claims against recent web publications to ensure assertions have not been superseded by newer findings.
+- **Isolated Side-Channel Chat (`/btw`):** Utilizes custom routing logic to handle general knowledge or standalone web search queries separately from the active document context.
+- **Automated RAG Evaluation:** Integrated testing suite powered by DeepEval running against golden datasets to track strict execution accuracy and telemetry.
+  
 ## Setup
 
 Use Python 3.10 or later. From the project root, install the dependencies:
