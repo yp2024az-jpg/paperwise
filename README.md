@@ -13,7 +13,10 @@ I haven't been able to get this project uploaded to GitHub yet.
 - **Claim Verification Loop:** Cross-references extracted research claims against recent web publications to ensure assertions have not been superseded by newer findings.
 - **Isolated Side-Channel Chat (`/btw`):** Utilizes custom routing logic to handle general knowledge or standalone web search queries separately from the active document context.
 - **Automated RAG Evaluation:** Integrated testing suite powered by DeepEval running against golden datasets to track strict execution accuracy and telemetry.
+ # EXTERNAL TOOL
+  **Qdrant** is the agent's long-term memory. Instead of relying on exact keyword matching, it stores vector embeddings so the agent can instantly search through hundreds of pages of research papers based on actual meaning and context.
   
+  **DeepEval** is the automated quality control coach. Building and fine-tuning an agentic RAG pipeline involves a lot of moving parts—from chunk sizes to prompt routing. DeepEval runs continuous tests against a golden dataset to objectively score the agent on things like hallucination and answer accuracy, ensuring it actually performs reliably instead of just guessing.
 ## Setup
 
 Use Python 3.10 or later. From the project root, install the dependencies:
