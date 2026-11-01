@@ -1,9 +1,8 @@
 # PAPERWISE
 
+Paperwise is an autonomous research paper assistant powered by a LangGraph agentic workflow. It enables users to upload academic papers, execute multi-step reasoning loops to query document contents, cross-verify research claims against real-time web results using Tavily, and handle general technical inquiries via an integrated `/btw` chat routing mechanism.
 
-I built Paperwise as a small research paper assistant. You can upload papers and then ask questions about the content of those papers, check claims against the latest web results and use a separate /btw chat for questions that aren't specifically about the papers you've uploaded.
-
-The app is a Streamlit frontend with a LangGraph workflow. It uses NVIDIA models for chat and embeddings, Qdrant for vector store, Tavily for web search and DeepEval for the eval script.
+The application features a Streamlit frontend coupled with an agentic backend orchestration layer. It leverages NVIDIA models for chat inference and embeddings, Qdrant for vector storage, Tavily for live web search, and DeepEval for programmatic evaluation scripts.
 
 I haven't been able to get this project uploaded to GitHub yet.
 
